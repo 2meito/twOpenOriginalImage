@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title class="i18n">OPTIONS</title>
+<link rel="stylesheet" type="text/css" href="../css/options.css"  />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/options.js"></script>
+</head>
+
+<body>
+
+<h1><a href="https://github.com/furyutei/twOpenOriginalImage" class="i18n" target="_blank">OPTIONS</a><a href="https://memo.furyutei.work/about#send_donation" class="i18n donation" target="_blank">DOMATION</a></h1>
+
+<div class="main">
+
+  <form id="form_opts">
+    <h2 class="i18n">DEFAULT_ACTION_ON_CLICK_EVENT</h2>
+    <div class="opt radio" id="DISPLAY_ALL_IN_ONE_PAGE">
+      <p><input type="radio" value="1" name="DISPLAY_ALL_IN_ONE_PAGE" id="DISPLAY_ALL_IN_ONE_PAGE_1" /><label for="DISPLAY_ALL_IN_ONE_PAGE_1" class="i18n">DISPLAY_ALL_IN_ONE_PAGE_DESCRIPTION</label></p>
+      <p><input type="radio" value="0" name="DISPLAY_ALL_IN_ONE_PAGE" id="DISPLAY_ALL_IN_ONE_PAGE_0" /><label for="DISPLAY_ALL_IN_ONE_PAGE_0" class="i18n">DISPLAY_ONE_PER_PAGE_DESCRIPTION</label>
+        <span id="TAB_SORTING">(<span class="i18n">TAB_SORTING</span>
+            <input type="radio" value="1" name="TAB_SORTING" id="TAB_SORTING_1" /><label for="TAB_SORTING_1" class="i18n">TAB_SORTING_ENABLED</label>
+            <input type="radio" value="0" name="TAB_SORTING" id="TAB_SORTING_0" /><label for="TAB_SORTING_0" class="i18n">DISABLED</label>
+        )</span>
+      </p>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">DISPLAY_OVERLAY</h2>
+    <div class="opt radio" id="DISPLAY_OVERLAY">
+      <input type="radio" value="1" name="DISPLAY_OVERLAY" id="DISPLAY_OVERLAY_1" /><label for="DISPLAY_OVERLAY_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="DISPLAY_OVERLAY" id="DISPLAY_OVERLAY_0" /><label for="DISPLAY_OVERLAY_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">OVERRIDE_CLICK_EVENT</h2>
+    <div class="opt radio" id="OVERRIDE_CLICK_EVENT">
+      <input type="radio" value="1" name="OVERRIDE_CLICK_EVENT" id="OVERRIDE_CLICK_EVENT_1" /><label for="OVERRIDE_CLICK_EVENT_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="OVERRIDE_CLICK_EVENT" id="OVERRIDE_CLICK_EVENT_0" /><label for="OVERRIDE_CLICK_EVENT_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">SWAP_IMAGE_URL</h2>
+    <div class="opt radio" id="SWAP_IMAGE_URL">
+      <input type="radio" value="1" name="SWAP_IMAGE_URL" id="SWAP_IMAGE_URL_1" /><label for="SWAP_IMAGE_URL_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="SWAP_IMAGE_URL" id="SWAP_IMAGE_URL_0" /><label for="SWAP_IMAGE_URL_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">DISPLAY_ORIGINAL_BUTTONS</h2>
+    <div class="opt radio" id="DISPLAY_ORIGINAL_BUTTONS">
+      <input type="radio" value="1" name="DISPLAY_ORIGINAL_BUTTONS" id="DISPLAY_ORIGINAL_BUTTONS_1" /><label for="DISPLAY_ORIGINAL_BUTTONS_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="DISPLAY_ORIGINAL_BUTTONS" id="DISPLAY_ORIGINAL_BUTTONS_0" /><label for="DISPLAY_ORIGINAL_BUTTONS_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">BUTTON_TEXT_HEADER</h2>
+    <div class="opt str" id="BUTTON_TEXT">
+      <span class="current text"></span>=&gt;
+      <input type="text" value="BUTTON_TEXT" name="BUTTON_TEXT" class="i18n text" />
+      <input type="button" value="SET" name="SET" class="i18n button" />
+    <!-- /.set --></div>
+    
+    <h2 class="i18n">ENABLED_ON_TWEETDECK</h2>
+    <div class="opt radio" id="ENABLED_ON_TWEETDECK">
+      <input type="radio" value="1" name="ENABLED_ON_TWEETDECK" id="ENABLED_ON_TWEETDECK_1" /><label for="ENABLED_ON_TWEETDECK_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="ENABLED_ON_TWEETDECK" id="ENABLED_ON_TWEETDECK_0" /><label for="ENABLED_ON_TWEETDECK_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">OVERRIDE_GALLERY_FOR_TWEETDECK</h2>
+    <div class="opt radio" id="OVERRIDE_GALLERY_FOR_TWEETDECK">
+      <input type="radio" value="1" name="OVERRIDE_GALLERY_FOR_TWEETDECK" id="OVERRIDE_GALLERY_FOR_TWEETDECK_1" /><label for="OVERRIDE_GALLERY_FOR_TWEETDECK_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="OVERRIDE_GALLERY_FOR_TWEETDECK" id="OVERRIDE_GALLERY_FOR_TWEETDECK_0" /><label for="OVERRIDE_GALLERY_FOR_TWEETDECK_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">DOWNLOAD_HELPER_IS_VALID_HEADER</h2>
+    <div class="opt radio" id="DOWNLOAD_HELPER_SCRIPT_IS_VALID">
+      <input type="radio" value="1" name="DOWNLOAD_HELPER_SCRIPT_IS_VALID" id="DOWNLOAD_HELPER_SCRIPT_IS_VALID_1" /><label for="DOWNLOAD_HELPER_SCRIPT_IS_VALID_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="DOWNLOAD_HELPER_SCRIPT_IS_VALID" id="DOWNLOAD_HELPER_SCRIPT_IS_VALID_0" /><label for="DOWNLOAD_HELPER_SCRIPT_IS_VALID_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY</h2>
+    <div class="opt radio" id="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY">
+      <input type="radio" value="1" name="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY" id="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY_1" /><label for="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY" id="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY_0" /><label for="HIDE_DOWNLOAD_BUTTON_AUTOMATICALLY_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">SAME_FILENAME_AS_IN_ZIP</h2>
+    <div class="opt radio" id="SAME_FILENAME_AS_IN_ZIP">
+      <input type="radio" value="1" name="SAME_FILENAME_AS_IN_ZIP" id="SAME_FILENAME_AS_IN_ZIP_1" /><label for="SAME_FILENAME_AS_IN_ZIP_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="SAME_FILENAME_AS_IN_ZIP" id="SAME_FILENAME_AS_IN_ZIP_0" /><label for="SAME_FILENAME_AS_IN_ZIP_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+    
+    <h2 class="i18n">SUPPRESS_FILENAME_SUFFIX</h2>
+    <div class="opt radio" id="SUPPRESS_FILENAME_SUFFIX">
+      <input type="radio" value="1" name="SUPPRESS_FILENAME_SUFFIX" id="SUPPRESS_FILENAME_SUFFIX_1" /><label for="SUPPRESS_FILENAME_SUFFIX_1" class="i18n">ENABLED</label>
+      <input type="radio" value="0" name="SUPPRESS_FILENAME_SUFFIX" id="SUPPRESS_FILENAME_SUFFIX_0" /><label for="SUPPRESS_FILENAME_SUFFIX_0" class="i18n">DISABLED</label>
+    <!-- /.select --></div>
+  </form>
+  <form id="form_command">
+    <input type="button" value="DEFAULT" name="DEFAULT" class="i18n button" />
+    <input type="button" value="OPERATION" name="OPERATION" class="i18n button" />
+  </form>
+
+<!-- /.main --></div>
+
+</body>
+</html>
